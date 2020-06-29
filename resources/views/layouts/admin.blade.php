@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}Admin </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -33,7 +33,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    <a class="nav-link" href="{{ route('posts.index') }}">Blog</a>
+                    <a class="nav-link" href="{{ route('admin.posts.index') }}">Blog</a>
+                    <a class="nav-link" href="{{ route('admin.posts.create') }}">New Post</a>
+                    <a class="nav-link" href="{{ route('home') }}">Return to home</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
